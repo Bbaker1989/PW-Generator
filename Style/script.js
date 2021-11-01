@@ -46,7 +46,7 @@ function generatePassword() {
 
     console.log("Upper case letters are included in password.");
 
-    console.log(passwordUpperChar);
+    console.log(upperCaseLetters);
 
 // Generates password without upper case letters
   } else {
@@ -54,10 +54,24 @@ function generatePassword() {
     console.log("No upper case letters added.");
     }
 
+//Generates password with lowercase letters
+if (pwLowerCase) {
 
+  genPassword = genPassword.concat(lowerCaseLetters);
+
+  console.log("Upper case letters are included in password.");
+
+  console.log(lowerCaseLetters);
+
+//Generates password without lower case letters
+} else {
+
+  console.log("No lower case letters added.");
+  }
 
 
 }
+
 
 
 // Assignment Code
