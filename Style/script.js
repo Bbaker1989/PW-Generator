@@ -44,8 +44,6 @@ function generatePassword() {
 
     genPassword = genPassword.concat(upperCaseLetters);
 
-    console.log("Upper case letters are included in password.");
-
     console.log(upperCaseLetters);
 
 // Generates password without upper case letters
@@ -58,8 +56,6 @@ function generatePassword() {
 if (pwLowerCase) {
 
   genPassword = genPassword.concat(lowerCaseLetters);
-
-  console.log("Lower case letters are included in password.");
 
   console.log(lowerCaseLetters);
 
@@ -75,9 +71,7 @@ if (pwNumbers) {
 
   genPassword = genPassword.concat(numbers);
 
-  console.log("Numbers are included in password.");
-
-  console.log(numbers);
+ console.log(numbers);
 
   //Generates password without numbers
 
@@ -90,8 +84,6 @@ if (pwNumbers) {
 if (pwSpecialChar) {
 
   genPassword = genPassword.concat(specialCharacters);
-
-  console.log("Special characters are included in password.");
 
   console.log(specialCharacters);
 
