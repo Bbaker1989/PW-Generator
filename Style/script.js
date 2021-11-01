@@ -59,7 +59,7 @@ if (pwLowerCase) {
 
   genPassword = genPassword.concat(lowerCaseLetters);
 
-  console.log("Upper case letters are included in password.");
+  console.log("Lower case letters are included in password.");
 
   console.log(lowerCaseLetters);
 
@@ -75,7 +75,7 @@ if (pwNumbers) {
 
   genPassword = genPassword.concat(numbers);
 
-  console.log("Upper case letters are included in password.");
+  console.log("Numbers are included in password.");
 
   console.log(numbers);
 
@@ -86,14 +86,37 @@ if (pwNumbers) {
   console.log("No numbers added.");
   }
 
+//Generate password with special characters
+if (pwSpecialChar) {
+
+  genPassword = genPassword.concat(specialCharacters);
+
+  console.log("Special characters are included in password.");
+
+  console.log(specialCharacters);
+
+//Generate password without special characters
+} else {
+
+  console.log("No special characters added.");
+  }
+
+//Generates password with desired criteria
+console.log(genPassword);
 
 
+//Generates random password combination for for loop
 
+var finalPassword = "";
 
+for (var i = 0; i < pwLength; i++) {
+  finalPassword = finalPassword + genPassword[Math.floor(Math.random() * genPassword.length)];
+}
+
+return finalPassword;
 
 
 }
-
 
 
 // Assignment Code
