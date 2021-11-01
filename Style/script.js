@@ -7,8 +7,22 @@ var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0" ]
 //Special Characters
 var specialCharacters = ["!", "%", "&", ",", "*", "+", "-", ".", "/", "<", ">", "?","~"];
 
+//Password Generator
+
+function generatePassword() {
+
+// Length of password
+
+  var pwLength = window.prompt("Please enter the length of your password.  It must be between 8 and 128 characters.");
+
+  if(pwLength <8 || pwLength >128 ) {
+    alert ("The password must be between 8 and 128 characters.");
+
+    console.log(pwLength);
+  }
 
 
+}
 
 
 // Assignment Code
