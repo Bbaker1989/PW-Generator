@@ -69,6 +69,28 @@ if (pwLowerCase) {
   console.log("No lower case letters added.");
   }
 
+//Generates password with numbers
+
+if (pwNumbers) {
+
+  genPassword = genPassword.concat(numbers);
+
+  console.log("Upper case letters are included in password.");
+
+  console.log(numbers);
+
+  //Generates password without numbers
+
+} else {
+
+  console.log("No numbers added.");
+  }
+
+
+
+
+
+
 
 }
 
